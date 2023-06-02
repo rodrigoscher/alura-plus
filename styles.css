@@ -5,6 +5,7 @@
   --cinza-secundario: #c0c0c0;
   --botao-azul: #167bf7;
   --cor-de-fundo: #00030c;
+  --fonte-principal: 'Inter';
 }
 
 * {
@@ -21,9 +22,11 @@ body {
 }
 
 .principal {
-  background-image: url(/img/Background.png);
+  background-image: url(./img/Background.png);
   background-repeat: no-repeat;
   background-size: contain;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
@@ -42,6 +45,7 @@ body {
   font-style: normal;
   padding: 1em;
   display: block;
+  margin: 0 0 1em 0;
   }
 
 .botao_secundario {
@@ -57,4 +61,101 @@ body {
 .container__titulo {
   font-size: 1.75em;
   font-weight: 700;
+}
+
+.container__imagem {
+  margin: 1em 0 2em 0;
+
+}
+
+.container__caixa {
+  margin: 0 6em;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.descricao__titulo {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--branco-principal);
+}
+
+.descricao__texto {
+  color: var(--cinza-secundario);
+  font-size: 16px;
+}
+
+.botao__secundario {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.container__descricao {
+  padding: 2em;
+}
+
+.dispositivos__titulo {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 5em 0;
+  
+}
+
+.dispositivos {
+  text-align: center;
+}
+.lista__item {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--branco-principal);
+}
+
+.rodape {
+  text-align: center;
+  margin: 5em 3em;
+}
+
+.logo__rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.lista__rodape {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  color: var(--branco-principal);
+  text-decoration: none;
+  margin-top: 2em;
+}
+
+.texto__rodape {
+  color: var(--cinza-secundario);
+  text-align: center;
+  margin: 1em 0;
+  font-size: 14px;
+}
+
+.lista__link a {
+  text-decoration: none;
+  color: var(--branco-principal);
+  margin-left: 1em;
 }
